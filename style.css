@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-heading: 'Staatliches', cursive;
+  --ff-texting: 'Palanquin', sans-serif;
+
+  --bg-header: #8E9AAF;
+  --bg-body: #EFF2FF;
+
+  --fc-body: #23053A;
+  --fc-heading: #fff;
+  --fc-heading-card: #4A4E69;
+}
+
