@@ -108,3 +108,13 @@ main {
 
 }
 
+@media(min-width:930px) {
+  .text {
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  
+}
+
