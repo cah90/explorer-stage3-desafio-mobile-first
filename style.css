@@ -136,6 +136,9 @@ footer {
     width: 37.7rem;
     position: fixed;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .text {
@@ -204,7 +207,7 @@ footer {
   }
 }
 
-@media (min-width: 1125px) {
+@media (min-width: 1440px) {
   .cards {
     width: 70%;
     
@@ -238,5 +241,45 @@ footer {
     grid-area: F;
   }
 
+  .cards .card {
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+  
+  .card img {
+    transition: 400ms transform;
+  }
 
+  .card img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 2rem;
+  }
+
+  .card {
+    animation: fadeInTop 700ms 175ms backwards;
+  }
+
+  .img-site {
+    animation: logoRotate 10s 2s infinite;
+  }
+
+  @keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes logoRotate {
+    from {
+      transform: rotateY(360deg);
+    }
+  }
+  
 } 
